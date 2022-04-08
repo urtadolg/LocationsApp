@@ -7,6 +7,7 @@ import {
 } from "expo-image-picker";
 import { Colors } from "../../constants/colors";
 import OutlinedButton from "../UI/OutlinedButton";
+import LocationPicker from "./LocationPicker";
 
 const ImagePicker = () => {
    const [pickedImage, setPickedImage] = useState();
@@ -76,6 +77,7 @@ const ImagePicker = () => {
             onPress={onTakePhotoButtonPressHandler}
             iconName="camera"
          />
+         <LocationPicker />
       </View>
    );
 };
